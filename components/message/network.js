@@ -27,7 +27,7 @@ router.get("/", function (req, res) {
     .then((messageList) => {
       response.success(req, res, messageList, 200);
     })
-    .catch((err) => {
+    .catch(err => {
       response.error(req, res, "Danger Danger from GET", 500, err);
     });
 });

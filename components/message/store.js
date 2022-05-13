@@ -1,17 +1,7 @@
-const db = require("mongoose");
+
 const Model = require("./model");
 
-db.Promise = global.Promise;
-db.connect(
-  "mongodb+srv://darkdemony:darkdemony123@cluster0.ki4b8.mongodb.net/deahtstar?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
 
-
-console.log("[db] connected to mongodb");
 
 function addMessage(message) {
   //   list.push(message);
